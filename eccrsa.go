@@ -10,12 +10,21 @@ import (
 )
 
 type Random struct {
-	r []*prng.MT19937_64
-	i int
-	b []byte
+	r     []*prng.MT19937_64
+	i     int
+	b     []byte
+	count uint64
 }
 
 func (r *Random) Read(p []byte) (n int, err error) {
+	// To curcumvent randutil.MaybeReadByte.
+	// Don't do it, kids.
+	if len(p) == 1 && r.count == 0 {
+		p[0] = 13
+		r.count++
+		return 1, nil
+	}
+	r.count++
 	for i := 0; i < len(p); i++ {
 		if len(r.b) == 0 {
 			u := r.r[r.i].Uint64()
