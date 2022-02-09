@@ -5,7 +5,6 @@ import (
 	"crypto/rsa"
 	"encoding/binary"
 
-	//"github.com/gonum/mathext/prng"
 	"gonum.org/v1/gonum/mathext/prng"
 )
 

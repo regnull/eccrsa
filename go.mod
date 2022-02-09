@@ -6,9 +6,17 @@ require (
 	github.com/btcsuite/btcd v0.21.0-beta // indirect
 	github.com/btcsuite/btcutil v1.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.0.0-20210816181553-5444fa50b93d // indirect
 	github.com/ecies/go v1.0.1 // indirect
 	github.com/ethereum/go-ethereum v1.10.14 // indirect
 	github.com/fomichev/secp256k1 v0.0.0-20180413221153-00116ff8c62f // indirect
+	github.com/goccy/go-json v0.9.4 // indirect
+	github.com/lestrrat-go/backoff/v2 v2.0.8 // indirect
+	github.com/lestrrat-go/blackmagic v1.0.0 // indirect
+	github.com/lestrrat-go/httpcc v1.0.0 // indirect
+	github.com/lestrrat-go/iter v1.0.1 // indirect
+	github.com/lestrrat-go/jwx v1.2.18 // indirect
+	github.com/lestrrat-go/option v1.0.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/regnull/easyecc v0.2.1 // indirect
